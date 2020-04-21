@@ -8,7 +8,7 @@ public class Main {
         t.add(32);
         t.add(23);
         System.out.println(t);
-        t.delete(23);
+        t.delete(24);
         System.out.println(t);
     }
 }
