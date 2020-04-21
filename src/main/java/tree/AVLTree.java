@@ -4,7 +4,8 @@ public class AVLTree {
 
     private class Node {
         int value;
-        Node left, right;
+        Node left;
+        Node right;
         byte height;
 
         Node(int value) {
@@ -46,7 +47,8 @@ public class AVLTree {
      *
      * */
     private byte height(Node node) {
-        byte h1 = 0, h2 = 0;
+        byte h1 = 0;
+        byte h2 = 0;
         if (node == null)
             return 0;
         if (node.left != null)
@@ -125,7 +127,8 @@ public class AVLTree {
         if (node == null)
             return 0;
         else {
-            byte left = 0, right = 0;
+            byte left = 0;
+            byte right = 0;
             if (node.left != null)
                 left = node.left.height;
             if (node.right != null)

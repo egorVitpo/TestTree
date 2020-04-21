@@ -7,8 +7,8 @@ public class Main {
         t.add(3242);
         t.add(32);
         t.add(23);
-        System.out.println(t);
+        SomeLogger.log(t.toString());
         t.delete(24);
-        System.out.println(t);
+        SomeLogger.log(t.toString());
     }
 }
